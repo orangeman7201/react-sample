@@ -7,6 +7,7 @@ import Name from './components/Name';
 import Message from './components/Message';
 import Container from './components/Container';
 import ContextSample from './components/ContextSample';
+import Counter from './components/Counter';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -14,7 +15,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ContextSample />
+    <Counter initialValue={0} />
   </React.StrictMode>
 );
 
