@@ -8,6 +8,7 @@ import Message from './components/Message';
 import Container from './components/Container';
 import ContextSample from './components/ContextSample';
 import Counter from './components/Counter';
+import Reducer from './components/Reducer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -15,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Counter initialValue={0} />
+    <Reducer initialValue={0} />
   </React.StrictMode>
 );
 
