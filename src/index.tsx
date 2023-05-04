@@ -6,6 +6,7 @@ import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
 import Container from './components/Container';
+import ContextSample from './components/ContextSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Container />
+    <ContextSample />
   </React.StrictMode>
 );
 
