@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 
 const UPDATE_CYCLE = 1000
 const KEY_LOCALE = 'KEY_LOCALE'
@@ -43,6 +43,14 @@ export const Clock = () => {
   useEffect(() => {
     localStorage.setItem(KEY_LOCALE, locale)
   }, [locale])
+
+  // DOMが更新される前に実行される。
+  useLayoutEffect(() => {
+    const savedLocale = localStorage.getItem(KEY_LOCALE)
+    if (savedLocale !== null) {
+      setLocale(getLocalFromString(savedLocale))
+    }
+  }, [])
 
   return (
     <div>
