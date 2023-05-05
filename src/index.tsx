@@ -9,6 +9,7 @@ import Container from './components/Container';
 import ContextSample from './components/ContextSample';
 import Counter from './components/Counter';
 import Reducer from './components/Reducer';
+import { Parent } from './components/Parent';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -16,11 +17,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Reducer initialValue={0} />
+    <Parent />
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
