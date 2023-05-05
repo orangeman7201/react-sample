@@ -12,6 +12,7 @@ import Reducer from './components/Reducer';
 import { Parent } from './components/Parent';
 import { Clock } from './components/Clock';
 import UseContext from './components/UseContext';
+import UseRef from './components/UseRef';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -19,11 +20,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <UseContext />
+    <UseRef />
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+reportWebVitals();
