@@ -13,6 +13,7 @@ import { Parent } from './components/Parent';
 import { Clock } from './components/Clock';
 import UseContext from './components/UseContext';
 import UseRef from './components/UseRef';
+import UseImperativeHandle from './components/UseImperativeHandle';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -20,7 +21,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <UseRef />
+    <UseImperativeHandle />
   </React.StrictMode>
 );
 
