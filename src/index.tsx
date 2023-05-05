@@ -10,6 +10,7 @@ import ContextSample from './components/ContextSample';
 import Counter from './components/Counter';
 import Reducer from './components/Reducer';
 import { Parent } from './components/Parent';
+import { Clock } from './components/Clock';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Parent />
+    <Clock />
   </React.StrictMode>
 );
 
